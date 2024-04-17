@@ -4,7 +4,7 @@ In this post, we’ll use MATLAB’s imagesc command to create a colour map and 
 
 I will be using publicly available data that can be found here. This is from the 2016 Revision of the World Input Output Database covering 15 years, from 2000 to 2014, compiled by the University of Groningen. The data contain trade flows by country-sector. 
 
-Part 1: Importing and Storing the Network Data
+## Part 1: Importing and Storing the Network Data
 
 To start, the code sets the directory and additional paths where the original data and command files are stored. Each data file contains the raw world input-output data for an individual year. I’ve named the data for each year as file15.xlsx starting from 2014 and counting down for previous year, i.e. for 2013, the file is named file14.xlsx and so on. 
 
@@ -36,7 +36,7 @@ all_adj(:,:,k)= A_illu;
 
 Now that we have cleaned and constructed the data of interest, we turn to the second part of the code which will produce the animated colour maps of the all_adj matrix.
 
-Part 2: Generating and Animating Colour Maps
+## Part 2: Generating and Animating Colour Maps
 
 The VideoWriter command creates the .mp4 file which will store the animation, titled as ‘alladj.mp4’ in the accompanying code. v is the name we specify to call the videowriter later in the code. We can also choose the frame rate – i.e. the number of frames (graphs) we want to display per second. Then, we open the videowriter with the command line open(v). Notice that this is specified outside of the second loop which loops over time t. 
 
@@ -71,7 +71,7 @@ close(v)
 
 You should get an .mp4 file as your output stored in the current folder set. This mp4 file can be converted to a gif using free mp4 to gif converters on the internet. You can play and pause the resulting animation “animation.mp4”, attached with this document, to see how the Chinese input-output network of sector-to-sector trade changes over time.
 
-Data citation: 
+## Data citation: 
 
 Timmer, M. P., Dietzenbacher, E., Los, B., Stehrer, R. and de Vries, G. J. (2015), "An Illustrated User Guide to the World Input–Output Database: the Case of Global Automotive Production", Review of International Economics., 23: 575–605
 
