@@ -1,6 +1,6 @@
 ![CC Graphics 2024_Animatedgraphs](https://github.com/csae-coders-corner/Animated-graphics-in-MATLAB/assets/148211163/a48b6335-98ad-4a58-a66e-fbf9956ff48f)
 
-# Animated-graphics-in-MATLAB
+# Animated-graphs-in-MATLAB
 
 In this post, we’ll use MATLAB’s imagesc command to create a colour map and then discuss how to create an animation of the resulting graphs. There are two aims of this post - (1) to discuss how networks can be represented using colour maps and; (2) to discuss how to animate the evolution of the network over time. I use the example of a production network but the code can be used to animate the evolution of any variable over time. 
 
